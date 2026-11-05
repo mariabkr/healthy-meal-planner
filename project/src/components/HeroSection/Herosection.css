@@ -1,0 +1,42 @@
+.hero {
+  display: flex; /* utilisé pour aligner le texte et le carousel */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: calc(100vh - 60px); 
+  padding: 100px; 
+  box-sizing: border-box;
+  background-color: #f5f5f5; 
+}
+
+.hero-text {
+  flex: 1; 
+  padding: 70px;
+}
+
+.hero-text h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem; 
+  color: #034f21; 
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem; 
+  color: #333; 
+  margin-bottom: 20px;
+}
+
+.carousel-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
+}
+
+.carousel-container .carousel {
+  width: 80%; 
+  height: 80%;
+}

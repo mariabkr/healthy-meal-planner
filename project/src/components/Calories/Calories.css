@@ -1,0 +1,167 @@
+.calories-page {
+    font-family: 'Outfit', sans-serif;
+    padding: 100px 40px 40px;
+    background-color: #f8faf8;
+    min-height: 100vh;
+  }
+  /* titre  */
+  .calories-page h1 {
+    color: #034f21;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .calories-page p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+  }
+
+  /* conteneur des graph et historique */
+
+  .dashboard-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(600px, 2fr) minmax(350px, 1fr) minmax(350px, 1fr);
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* graph */
+  .chart-section {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    width: 100%;
+    position: relative;
+    overflow: visible;
+  }
+  
+  /* effet de survol */
+  .chart-section:hover {
+    transform: translateY(-5px);
+  }
+  
+  .chart-section h2 {
+    color: #034f21;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #e8f5e9;
+    padding-bottom: 15px;
+  }
+  
+  .consumption-history {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .consumption-history h2 {
+    color: #034f21;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    border-bottom: 2px solid #e8f5e9;
+    padding-bottom: 15px;
+  }
+  
+  .history-list {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .history-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .history-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .history-list::-webkit-scrollbar-thumb {
+    background: #034f21;
+    border-radius: 4px;
+  }
+  /* element individuel de l'historique */
+  .history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease;
+  }
+  
+  .history-item:hover {
+    background-color: #f8faf8;
+  }
+  
+  .history-date {
+    color: #666;
+    font-size: 0.95rem;
+    min-width: 120px;
+  }
+  
+  .history-meal {
+    color: #333;
+    font-weight: 500;
+    flex-grow: 1;
+    margin: 0 20px;
+  }
+  
+  .history-calories {
+    color: #034f21;
+    font-weight: 600;
+    background: #e8f5e9;
+    padding: 6px 12px;
+    border-radius: 20px;
+    min-width: 90px;
+    text-align: center;
+  }
+  
+  .chart-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .chart-section:nth-child(2) {
+    position: relative;
+  }
+  
+  .chart-section:nth-child(2) .chart-container {
+    min-height: 300px;
+  }
+  
+  .chart-section:nth-child(2) .recharts-legend-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    left: 0 !important;
+    transform: none !important;
+  }
+  /* Responsive design */
+  @media (max-width: 1400px) {
+    .dashboard-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .consumption-history,
+    .chart-section {
+      max-width: 100%;
+    }
+  } 

@@ -1,0 +1,49 @@
+/* style du logo */
+.logo img {
+  height: 40px; 
+  max-height: 100%; 
+  width: auto; 
+  object-fit: contain; 
+}
+
+
+.header {
+  position: fixed; /* toujours fixé */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #095a3b; 
+  z-index: 10; 
+  padding: 0 20px; 
+  margin: 0;
+  height: 60px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px; 
+}
+
+.navbar a {
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  line-height: 60px;
+  transition: color 0.3s ease;
+}
+/* Effet de survol  */
+.navbar a:hover {
+  color: #d7a46f; 
+}
+
+/* le bouton logout */
+.logout-button:hover {
+  color: #023618;
+}
