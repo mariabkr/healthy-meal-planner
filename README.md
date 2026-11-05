@@ -1,4 +1,4 @@
-# 🍽️ Healthy Meal Planner
+# 🍽️ Healthy Meal Planner ( bachelor project)
 
 **EatMeSlow — Full-Stack Nutrition Tracking Web Application**
 
